@@ -1,0 +1,87 @@
+<section id="about-us">
+<!-- Page Content -->
+{% for organizer in site.organizers %}
+
+    {% assign image_organizer = organizer.image | strip_newlines %}
+    {% assign twitter_organizer = organizer.twitter_account | strip_newlines %}
+    {% assign linkedin_organizer = organizer.linkedin_account | strip_newlines %}
+
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <!--<div class="row">-->
+                <div class="col-lg-5 col-sm-6">
+                    <!--<hr class="section-heading-spacer">
+                    <div class="clearfix"></div>-->
+                    <h2 class="section-heading">{{ organizer.name }}</h2>
+                    {% if twitter_organizer != ""  %}
+                    <a href="https://twitter.com/{{ organizer.twitter_account }}" target="_blank"><i class="fa fa-twitter fa-fw fa-2x mt-highlight"></i></a>
+                    {% endif %}
+                    {% if linkedin_organizer != ""  %}
+                    <a href="https://www.linkedin.com/in/{{ organizer.linkedin_account }}" target="_blank"><i class="fa fa-linkedin fa-fw fa-2x mt-highlight"></i></a>
+                    {% endif %}
+                    <br/>
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <div class="lead">{{ organizer.bio }}</div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <!--<img class="img-responsive" src="{{ organizer.image }}" alt="" style="max-height: 300px;">-->
+                    {% if image_organizer != ""  %}
+                    <img src="{{ organizer.image }}" class="img-responsive" style="max-height: 300px;"/>
+                    {% elsif twitter_organizer != "" %}
+                    <!--<img src="https://twitter.com/{{ organizer.twitter_account }}/profile_image?size=original" class="fa fa-stack-1x text-primary img-circle"/>-->
+                    <img src="https://avatars.io/twitter/{{ organizer.twitter_account }}" class="img-responsive" style="max-height: 300px;"/>
+                    {% endif %}
+                </div>
+            <!--</div>-->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <!--<div class="row">-->
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <!--<hr class="section-heading-spacer">
+                    <div class="clearfix"></div>-->
+                    <h2 class="section-heading">{{ organizer.name }}</h2>
+                    {% if twitter_organizer != ""  %}
+                    <a href="https://twitter.com/{{ organizer.twitter_account }}" target="_blank"><i class="fa fa-twitter fa-fw fa-2x mt-highlight"></i></a>
+                    {% endif %}
+                    {% if linkedin_organizer != ""  %}
+                    <a href="https://www.linkedin.com/in/{{ organizer.linkedin_account }}" target="_blank"><i class="fa fa-linkedin fa-fw fa-2x mt-highlight"></i></a>
+                    {% endif %}
+                    <br/>
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <div class="lead">{{ organizer.bio }}</div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <!--<img class="img-responsive" src="{{ organizer.image }}" alt="" style="max-height: 300px;">-->
+                  {% if image_organizer != ""  %}
+                    <img src="{{ organizer.image }}" class="img-responsive" style="max-height: 300px;"/>
+                    {% elsif twitter_organizer != "" %}
+                    <!--<img src="https://twitter.com/{{ organizer.twitter_account }}/profile_image?size=original" class="fa fa-stack-1x text-primary img-circle"/>-->
+                    <img src="https://avatars.io/twitter/{{ organizer.twitter_account }}" class="img-responsive" style="max-height: 300px;"/>
+                    {% endif %}
+                </div>
+            <!--</div>-->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    {% endif %}
+{% endfor %}
+</section>

@@ -1,1 +1,93 @@
-theme: jekyll-theme-cayman
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://mullerestech.es
+title: Mulleres Tech
+email: womentechmakerszgz@gmail.com
+twitter_account: WTMZaragoza
+github_account: MulleresTechZgz
+author: Mulleres Tech
+description: > # "Write an awesome description for your new site here. 
+  You can edit this line in _config.yml. It will appear in your document 
+  head meta (for Google search results) and in your feed.xml site 
+  description.
+copyright: 'Copyright &copy; 2017'
+credits: 
+twitter_account: WTMZaragoza
+github_account: MulleresTechZgz
+web_wtm: http://wtmz17.mullerestech.es/
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#       Organizers        #
+# ----------------------- #
+organizers:
+  - name: Esther Borao
+    text: 
+    image: 
+    twitter_account: EstherBorao
+    linkedin_account: 
+    bio: 
+  - name: Miriam Durán
+    text: 
+    image: 
+    twitter_account: miripi
+    linkedin_account: 
+    bio: 
+  - name: Cynthia Gálvez
+    text: 
+    image: 
+    twitter_account: icynthia
+    linkedin_account: 
+    bio: 
+  - name: Patricia Heredia
+    text: 
+    image: 
+    twitter_account: pherediagil
+    linkedin_account: 
+    bio: 
+  - name: Laura Lacarra
+    text: 
+    image: 
+    twitter_account: LauraLacarra
+    linkedin_account: 
+    bio: 
+  - name: Cristina Pérez
+    text: 
+    image: 
+    twitter_account: cristinapg
+    linkedin_account: 
+    bio: 
+  - name: Jessica Redrado
+    text: 
+    image: 
+    twitter_account: Jessi_Redrado
+    linkedin_account: jessica-redrado-martinez
+    bio: 
+  - name: Paloma Royo
+    text: 
+    image: 
+    twitter_account: plmrc_
+    linkedin_account: 
+    bio: 
+  - name: Ana Sánchez
+    text: 
+    image: img/organizadoras/ana_sanchez.jpg
+    twitter_account: _Ana_Sanchez_
+    linkedin_account: anasanchezalvarez
+    bio: Cofundadora de San Jimes y paleta de colores en Royito Studio. Diseña todo lo que puede, cuida de tres animales e intenta ser una muller de provecho con ésta, su vertiente más digital.
+  - name: Nieves Sancho
+    text: 
+    image: 
+    twitter_account: Nievesancho
+    linkedin_account: 
+    bio: 
+
