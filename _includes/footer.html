@@ -48,13 +48,13 @@
     -->
                     <ul class="list-inline">
                         <li>
-                            <a href="https://twitter.com/{{ site.twitter_account }}" class="btn btn-lg"><i class="fa fa-twitter fa-fw fa-lg"></i> <span class="network-name">TWITTER</span></a>
+                            <a href="https://twitter.com/{{ site.twitter_account }}" target="_blank" class="btn btn-lg"><i class="fa fa-twitter fa-fw fa-lg"></i> <span class="network-name">TWITTER</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/{{ site.github_account }}" class="btn btn-lg"><i class="fa fa-github fa-fw fa-lg"></i> <span class="network-name">GITHUB</span></a>
+                            <a href="https://github.com/{{ site.github_account }}" target="_blank" class="btn btn-lg"><i class="fa fa-github fa-fw fa-lg"></i> <span class="network-name">GITHUB</span></a>
                         </li>
                         <li>
-                            <a href="mailto:{{ site.email }}" class="btn btn-lg"><i class="fa fa-envelope-o fa-fw fa-lg"></i> <span class="network-name">E-MAIL</span></a>
+                            <a href="mailto:{{ site.email }}" target="_blank" class="btn btn-lg"><i class="fa fa-envelope-o fa-fw fa-lg"></i> <span class="network-name">E-MAIL</span></a>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <hr class="intro-divider">
-                <p class="copyright">{{ site.copyright }}</p>
+                <p class="copyright">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
             </div>
         </div>
     </div>

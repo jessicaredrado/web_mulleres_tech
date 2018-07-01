@@ -27,12 +27,12 @@
                   <strong>{{ organizer.name }}</strong>
                 </h4>
                 {% if twitter_organizer != ""  %}
-                    <a href="https://twitter.com/{{ organizer.twitter_account }}" target="_blank"><i class="fa fa-twitter fa-fw fa-2x mt-highlight"></i></a>
-                    {% endif %}
-                    {% if linkedin_organizer != ""  %}
-                    <a href="https://www.linkedin.com/in/{{ organizer.linkedin_account }}" target="_blank"><i class="fa fa-linkedin fa-fw fa-2x mt-highlight"></i></a>
-                    {% endif %}
-                    <br/>
+                <a href="https://twitter.com/{{ organizer.twitter_account }}" target="_blank"><i class="fa fa-twitter fa-fw fa-2x mt-highlight"></i></a>
+                {% endif %}
+                {% if linkedin_organizer != ""  %}
+                <a href="https://www.linkedin.com/in/{{ organizer.linkedin_account }}" target="_blank"><i class="fa fa-linkedin fa-fw fa-2x mt-highlight"></i></a>
+                {% endif %}
+                <br/>
               </div>
             </div>
           {% endfor %}

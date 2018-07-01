@@ -4,19 +4,17 @@
 
 url: http://mullerestech.es
 title: Mulleres Tech
-email: womentechmakerszgz@gmail.com
-twitter_account: WTMZaragoza
+email: hello@mullerestech.es
+twitter_account: MulleresTech
 github_account: MulleresTechZgz
 author: Mulleres Tech
 description: > # "Write an awesome description for your new site here. 
   You can edit this line in _config.yml. It will appear in your document 
   head meta (for Google search results) and in your feed.xml site 
   description.
-copyright: 'Copyright &copy; 2017'
 credits: 
-twitter_account: WTMZaragoza
-github_account: MulleresTechZgz
-web_wtm: http://wtmz17.mullerestech.es/
+web_wtm_2017: http://wtmz17.mullerestech.es/
+web_wtm_2018: http://wtmz18.mullerestech.es/
 
 # ----------------------- #
 #    Jekyll & Plugins     #
